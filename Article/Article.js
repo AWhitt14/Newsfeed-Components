@@ -144,6 +144,14 @@ cont.appendChild(expand);
 return cont;
 }
 
+data.push({
+  title: 'Alex Is Awesome',
+  date: '06/09/2020',
+  firstParagraph: 'Reminder: @here Please take a moment to reflect upon your day and fill out your Daily Module Retro form',
+  secondParagraph: 'also after Q&A tonight we will be introducing open hours, a new resource for students. Open hours is an opportunity to get help from an instructor 1:1, and the student should bring a prepared question that can be answered within 5 minutes. As we are trying out open hours for the first time, we will likely be evaluating and making change to make it as most helpful and effective as we go. Feedbacks welcome! The plan for tonight is to do open hours from 4:30PM-5:30PM. I will provide a zoom call link, in which one student will be admitted one at a time. We may have a formal tool to track schedules for open hours, but for tonight feel free to respond to this thread if you are interested in open hours, and I can admit students in the order of the comments which are made. ',
+  thirdParagraph: 'A strong Lambda community is one that reflects our commitment to opportunity for all and is a welcoming space, where our students thrive. To begin to address and achieve this, we need to better understand the backgrounds of our student population with more intentional and comprehensive demographic data. Please help us by participating in this short survey by Monday, June 15th. All individual responses are confidential. Only the overall findings will be shared.',
+})
+
 let bod = document.querySelector('body');
 data.forEach((obj) => {
  bod.appendChild(articleMaker(obj));
